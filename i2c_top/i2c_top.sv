@@ -7,6 +7,13 @@
 
 module i2c_top();
 
+input logic d;
+input logic clk;
 
+output logic q;
+
+// basic dff for testing with testbench and open source simulator
+always_ff @(posedge clk)
+    q <= d; 
 
 endmodule
